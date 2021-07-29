@@ -1,0 +1,130 @@
+.container {
+  > nav {
+    margin-bottom: 20px;
+    position: relative;
+    .breadcrumb {
+      padding-left: 0;
+      margin-left: 0;
+      background-color: transparent;
+      border-bottom: 1px solid #f4f4f4;
+      border-radius: 0px;
+      display: flex;
+      align-items: center;
+      .breadcrumb-item {
+        > a {
+          text-decoration: none;
+          color: #666666;
+          &:hover {
+            color: #d41d2c;
+          }
+        }
+        &.active {
+          color: black;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .shopcart-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  table {
+    thead {
+      text-align: center;
+      margin-bottom: 30px;
+      tr {
+        > th {
+          padding: 10px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          width: 80px;
+          color: #999999;
+        }
+        .th-product {
+          width: 440px;
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      font-weight: 300;
+      text-align: center;
+      position: relative;
+      tr {
+        margin-top: 30px;
+        .cart-product {
+          padding-top: 30px;
+          padding-bottom: 10px;
+          display: flex;
+          margin-bottom: 5px;
+          height: 120px;
+          align-items: center;
+          > img {
+            width: 65px;
+            height: 75px;
+            object-fit: cover;
+            margin-right: 5px;
+          }
+          > p {
+            font-size: 16px;
+            letter-spacing: -0.16px;
+            margin-left: 15px;
+            font-weight: 300;
+          }
+        }
+        .cart-price {
+          > p {
+            margin-bottom: 0;
+          }
+        }
+        .cart-qty {
+          > input {
+            width: 50px;
+            text-align: center;
+            font-weight: 300;
+          }
+        }
+        .cart-total {
+          > p {
+            margin-bottom: 0;
+          }
+        }
+        .cart-remove {
+          width: 40px;
+          > button {
+            background-color: transparent;
+            > i {
+              font-size: 16px;
+              color: #999999;
+              transition: 0.5s color;
+              &:hover {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-clear {
+    margin-top: 50px;
+    float: right;
+    position: relative;
+    > button {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+      border: .5px solid rgb(226, 226, 226);
+      background-color: transparent;
+      color: #999999;
+      &:hover{
+        color: #575757;
+     
+      }
+    }
+  }
+}

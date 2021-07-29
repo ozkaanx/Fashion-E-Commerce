@@ -1,0 +1,25 @@
+.container {
+  .total-menu {
+    background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 25px;
+    .total-title{
+        margin: 5px 5px 0px;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+    .total-count{
+        padding-right: 30px;
+        font-size: 30px;
+        text-align: right;
+        margin: 5px;
+    
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.benefit-item {
+  display: flex;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 5px;
+  position: relative;
+  .benefit-icon {
+    position: relative;
+    margin-right: 5px;
+    min-width: 45px;
+    > span {
+      font-size: 35px;
+      display: flex;
+    }
+  }
+  .benefit_content {
+    max-width: 90%;
+    position: relative;
+    text-align: left;
+    align-items: center;
+    > h3 {
+      font-size: 16px;
+      letter-spacing: 0;
+      margin-bottom: 0.8px;
+    }
+    > p {
+      font-size: 14px;
+      color: #999999;
+      font-weight: 300;
+    }
+  }
+}

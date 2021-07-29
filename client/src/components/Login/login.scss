@@ -1,0 +1,50 @@
+.container{
+    .log-section{
+        margin: auto;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        position: relative;
+        >p{
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: 10px;
+          margin-bottom: 30px;
+        }
+        >input{
+            background-color: transparent;
+             width: 500px;
+            height: 56px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 2px solid rgb(223, 222, 226);
+            background-color: #f8f8f8c2;
+            font-size: 14px;
+            font-weight: 300;
+            color: #424242;
+            &:hover{
+                border : 2px solid rgb(8, 8, 87);
+            }
+        }
+        >button{
+            max-width: 160px;
+            height: 40px;
+            background-color: grey;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 17px;
+            text-transform: uppercase;
+            transition: .5s;
+            &:hover{
+             
+                max-width: 200px;
+            }
+        }
+        >span{
+            margin-top: 15px;
+        }
+    }
+
+}

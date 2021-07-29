@@ -1,0 +1,126 @@
+.topbar {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  .top-left {
+    padding-top: 15px;
+    > p {
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  .top-right {
+    padding-top: 15px;
+    > button {
+      background-color: transparent;
+      border: 1px solid grey;
+      width: 100px;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 10px;
+    }
+    .navbar-btn {
+      border: none;
+      font-size: 22px;
+      display: none;
+    }
+  }
+}
+.container {
+  position: relative;
+  .navbar-menu {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    .menu-item {
+      margin-right: 15px;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      > a {
+        text-decoration: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: black;
+      }
+      > .menu-icon {
+        height: 34px;
+        width: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        > svg {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  #close {
+    .hiddenLinks {
+      display: none;
+    }
+  }
+  .responsive-menu {
+    font-family: "Roboto", sans-serif;
+    .hiddenLinks {
+      transform: scaleY(2px);
+      transition: 1s;
+      .menu-item {
+        margin-right: 15px;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        > a {
+          text-decoration: none;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          color: black;
+        }
+        > .menu-icon {
+          height: 34px;
+          width: 26px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 5px;
+          > svg {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    .navbar-menu {
+      display: none;
+    }
+  }
+  .topbar {
+    position: relative;
+    .top-left {
+      margin: auto;
+      display: none;
+    }
+    .top-right {
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      .navbar-btn {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 999px) {
+  .hiddenLinks {
+    display: none;
+  }
+}
