@@ -15,7 +15,7 @@ Yönetici paneline sahiptir.
 ## Frontend 
 - React
 - Bootsrap
-- Scss
+- Sass
 
 ## Backend
 - NodeJs
